@@ -1,3 +1,17 @@
+# customized
+.DS_Store
+*.ipynb_checkpoints
+data/*
+test.py
+__pycache__/*
+index/*
+secrets/*
+output/*
+test/*
+paper/*
+obsolete/*
+*/test.ipynb
+
 # Byte-compiled / optimized / DLL files
 __pycache__/
 *.py[cod]
