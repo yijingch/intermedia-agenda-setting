@@ -13,17 +13,6 @@ import nltk
 from src.utils.data_loader import Headlines, Surveys 
 from src.utils.dict_loader import TopicDictionary
 
-# def adjust_pos(pos1, pos2):
-#     for p1 in pos1:
-#         len1 = p1[1] - p1[0] 
-#         for p2 in pos2:
-#             len2 = p2[1] - p2[0] 
-#             if bool_overlap(p1, p2):
-#                 if len1 < len2:
-#                     pos1.remove(p1)
-#                 else:
-#                     pos2.remove(p2)
-#     return pos1, pos2
 
 def adjust_pos(pos1, pos2):
     p1_remove = []
@@ -66,23 +55,6 @@ class DictBasedTopicModel():
         self.dictionary = dictionary
         self.text_input = text_input # class object: Headlines or Surveys
         self.text_type = text_type # headline or survey
-
-    # def build_wordvec(self, text): --> this produce negative numbers
-    #     wordvec = np.zeros(self.dictionary.n_words)
-    #     for w in self.dictionary.words:
-    #         indx_w = self.dictionary.word2index[w]
-    #         n_occurs = len(re.findall(r"\b"+w+r"\b", text))
-    #         wordvec[indx_w] += n_occurs
-    #     # deduct what's being double-counted    
-    #     occurred_words_idx = np.nonzero(wordvec)[0]
-    #     if len(occurred_words_idx) > 0:
-    #         for idx1 in occurred_words_idx:
-    #             overlap_vec = self.dictionary.overlap_mat[idx1]
-    #             overlap_words_idx = np.nonzero(overlap_vec)[0]
-    #             if len(overlap_words_idx) > 0: 
-    #                 for idx2 in overlap_words_idx:
-    #                     wordvec[idx1] -= wordvec[idx2]                
-    #     return wordvec
 
     def build_wordvec(self, text):
         wordvec = np.zeros(self.dictionary.n_words)
