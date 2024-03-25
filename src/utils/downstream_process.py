@@ -3,6 +3,7 @@
 import numpy as np 
 import pandas as pd
 import re
+from typing import List, Dict, Any
 from src.utils.dict_loader import TopicDictionary
 
 
@@ -65,3 +66,10 @@ def normalize(arr, smooth=0):
         return (np.array(arr)+smooth)/np.sum(np.array(arr)+smooth)
     else:
         return np.zeros(len(arr))
+    
+
+def assign_popularity_weight(domain:str, popularity_dict:Dict):
+    label = 0
+    if domain in popularity_dict.keys():
+        label = popularity_dict[domain]
+    return label
