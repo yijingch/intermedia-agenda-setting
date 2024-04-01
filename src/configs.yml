@@ -1,0 +1,17 @@
+ROOTPATH: /Users/yijingch/Documents/GITHUB/intermedia-agenda-setting/
+DATAPATH: /Users/yijingch/Documents/GITHUB/election-agendas/data/
+TOPVEC_CACHE_PATH: /Users/yijingch/Documents/GITHUB/intermedia-agenda-setting/output/cache-topvec-min2/
+WORDVEC_CACHE_PATH: /Users/yijingch/Documents/GITHUB/intermedia-agenda-setting/output/cache-wordvec-min2/
+START2016: 2016-07-01 00:00:00
+END2016: 2016-11-30 00:00:00
+START2020: 2020-07-01 00:00:00
+END2020: 2020-11-30 00:00:00
+
+# -- OUTPUT
+# NEW!
+DATE_TOPVEC_PATH: /Users/yijingch/Documents/GITHUB/intermedia-agenda-setting/output/date-topvec-min2-gtm1/
+DATE_WORDVEC_PATH: /Users/yijingch/Documents/GITHUB/intermedia-agenda-setting/output/date-wordvec-min2-gtm1/
+WEEK_TOPVEC_PATH: /Users/yijingch/Documents/GITHUB/intermedia-agenda-setting/output/week-topvec-min2-gtm1/
+WEEK_WORDVEC_PATH: /Users/yijingch/Documents/GITHUB/intermedia-agenda-setting/output/week-wordvec-min2-gtm1/
+SUM_WORDVEC_PATH: /Users/yijingch/Documents/GITHUB/intermedia-agenda-setting/output/sum-wordvec-min2-gtm1/
+SUM_TOPVEC_PATH: /Users/yijingch/Documents/GITHUB/intermedia-agenda-setting/output/sum-topvec-min2-gtm1/
