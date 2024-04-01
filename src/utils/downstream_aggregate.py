@@ -10,7 +10,8 @@ from src.utils.downstream_process import merge_topics_from_arr, collapse_general
 from src.utils.downstream_process import trim_period, assign_popularity_weight, normalize
 
 
-def load_model_output(fpath:str, start, end, trim:bool=True, strip_time=True) -> pd.DataFrame:
+def load_model_output(fpath:str, start, end, trim:bool=False, strip_time=True) -> pd.DataFrame:
+    # 033124: turn trim to false to avoid data loss
     df = pd.read_pickle(fpath)
     if strip_time:
         df["date"] = df["date"].map(lambda x: str(x)[:10])
