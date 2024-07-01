@@ -4,7 +4,7 @@
 data/*
 test.py
 __pycache__/*
-index/*
+index/domains/*
 secrets/*
 output/*
 test/*
